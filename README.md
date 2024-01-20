@@ -7,21 +7,29 @@ Aplikasi ini dibuat menggunakan Node.js untuk mengirim email secara efisien deng
 **Latar Belakang Program Aplikasi**
 
 Pembuatan aplikasi pengirim email menggunakan Node.js untuk kebutuhan pengiriman email efektif dalam pengembangan web. Node.js dipilih karena kemampuannya menangani banyak koneksi secara bersamaan dan model asinkronusnya yang cocok untuk pengiriman email.
+
 **Penjelasan Source Code Aplikasi**
 
 Menggunakan Nodemailer untuk mengirim email, dengan fungsi-fungsi asinkronus seperti signup untuk pengiriman email uji dan getbill untuk mengirim tagihan. Menggunakan Mailgen untuk menghasilkan konten HTML email. Mengonfigurasi layanan email dengan Gmail atau akun email uji dari ethereal.
 
 **Node_modules**
+
 Direktori yang berisi dependensi atau modul-modul pihak ketiga yang dibutuhkan oleh aplikasi Node.js. Mengelola paket-paket eksternal yang dibutuhkan dalam proyek.
 
 **Routes>route**
+
 Mendefinisikan endpoint untuk signup dan getbill. Memisahkan logika penanganan rute ke file terpisah untuk organisasi yang lebih baik.
+
 **Env.js**
+
 Menyimpan informasi sensitif seperti alamat email dan kata sandi. Menggunakan module.exports untuk mengakses informasi ini dari modul lain.
+
 **Server.js**
+
 Membuat server Express menggunakan Express.js. Menggunakan middleware untuk mengenali format data JSON. Menyediakan rute yang diimpor dari file rute.
 
 **Contoh Hasil Running**
+
 Demonstrasi penggunaan program dengan contoh email yang dikirim dan diterima. Pada intinya, program ini menggunakan Node.js dan Nodemailer untuk mengirim email. Fungsi-fungsi seperti signup dan getbill digunakan untuk mengirim email uji dan tagihan melalui layanan email tertentu, dengan konfigurasi yang didefinisikan dalam file Env.js. Routes didefinisikan untuk menangani permintaan HTTP ke endpoint tertentu. Kemudian, program diuji dengan Thunder Client untuk mengonfirmasi pengiriman dan penerimaan email.
 
 **Langkah Penggunaan**
